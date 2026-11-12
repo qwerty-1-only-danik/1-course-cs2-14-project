@@ -1,0 +1,462 @@
+/*global settings*/
+
+body {
+    background-color: #121212;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/*======header========*/
+
+header {
+    background-color: rgba(18,18,18,0.85);
+    backdrop-filter: blur(10px);
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 1px solid #2a2a2a;
+    margin: 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: 700;
+    color: #eab308;
+    text-decoration: none;
+    letter-spacing: -0.5px;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    display: flex;
+    gap: 32px;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #9ca3af;
+    font-size: 15px;
+    font-weight: 500;
+    transition: color 0.2s;
+    margin: 0;
+    padding: 0;
+}
+
+nav a:hover {
+    color: #ffffff;
+}
+
+/*=======hero section==========*/
+
+#home {
+    padding: 100px 0;
+    margin: 0;
+}
+
+#home .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: boredr-box;
+}
+
+.home-content {
+    flex: 1;
+}
+
+.home-content p {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: #eab308;
+    margin: 0 0 12px 0;
+    padding: 0;
+}
+
+.home-content h1 {
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 1/15;
+    letter-spacing: -1px;
+    margin: 0 0 20px 0;
+    padding: 0;
+}
+
+.home-content p:last-of-type {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #9ca3af;
+    margin: 0 0 36px 0;
+    text-transform: none;
+    letter-spacing: normal;
+}
+.home-links {
+    margin: 0;
+    padding: 0;
+}
+
+.home-links a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 14px 28px;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 8px;
+    transition: background-color 0.2s, color 0.2s;
+    box-sizing: border-box;
+}
+
+.home-links a:first-child {
+    background-color: #eab308;
+    color: #121212;
+    margin-right: 16px;
+}
+
+.home-links a:first-child:hover {
+    background-color: #ca8a04;
+}
+
+.home-links a:last-child {
+    background-color: transparent;
+    color: #ffffff;
+    border: 1px solid #374151;
+}
+
+.home-links a:last-child:hover {
+    background-color: rgba(255,255,255,0.05);
+}
+
+#home img {
+    width: 440px;
+    height: 480px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 20px 20px 0px #1e1e1e1e;
+    margin: 0;
+    padding: 0;
+    box-sizing: boredr-dox;
+}
+
+/*=========heading structure========*/
+
+#products, #explore, #featured {
+    padding: 90px 0;
+    margin: 0;
+}
+
+.section-heading {
+    text-align: center;
+    margin: 0 0 50px 0;
+    padding: 0;
+}
+
+section-heading h2 {
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    margin: 0;
+    padding: 0;
+}
+
+/*=======top products=====*/
+
+.products-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.products-container article {
+    width: 31.5%;
+    background-color: #1e1e1e1e;
+    padding: 24px;
+    border-radius: 12px;
+    border: 1px solid #2a2a2a;
+    transition: transform 0.2s, box-shadow 0.2s;
+    margin: 0;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+.products-container article:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba (0,0,0,0.3);
+}
+
+.products-container img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin: 0 0 16px 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.products-container h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0 0 6px 0;
+    padding: 0;
+}
+
+.products-container p {
+    color: #9ca3af;
+    font-size: 14px;
+    line-height: 1/5;
+    margin: 0 0 20px 0;
+    padding: 0;
+}
+
+.products-container span {
+    font-size: 18px;
+    font-weight: 700;
+    color: #eab308;
+    display: inline-block;
+    margin-top: 4px;
+}
+
+.products-container a {
+    float: right;
+    background-color: #374151;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 6px 16px;
+    font-size: 13px;
+    font-weight: 600;
+    border-radius: 6px;
+    transition: background-color 0.2s;
+}
+
+.products-container a:hover {
+    background-color: #4b554b;
+}
+
+/*============ promo and about banners===========*/
+
+#promo, #about {
+    background-color: #ffffff;
+    color: #121212;
+    padding: 80px 0;
+    text-align: center;
+    margin: 0;
+}
+
+#promo .home-links a {
+    background-color: #121212;
+    color: #ffffff;
+    border: none;
+}
+
+#promo.home-links a:hover {
+    background-color: #eab308;
+    color: #12121212;
+}
+
+#about {
+    background-color: #1e1e1e1e;
+    color: #ffffff;
+    border-top: 1px solid #2a2a2a2a;
+    border-bottom: 1px solid #2a2a2a;
+}
+
+#promo .section-heding, #about .section-heading {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+#promo .section-heading h2, #about .section-heading h2 {
+    font-size: 40px;
+    margin-bottom: 16px;
+}
+
+#promo .section-heading p, #about .section-heading p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #4b554b;
+    margin: 0 0 32px 0;
+}
+
+#about .section-heding p {
+    color: #9ca3af;
+}
+
+/*==========exploere more section (filter + gallery )=============*/
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-bottom: 40px;
+}
+
+.contact-links a {
+    text-decoration: none;
+    color: #9ca3af;
+    padding: 8px 20px;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 20px;
+    border: 1px solid #2a2a2a;
+    transition: all 0.2s;
+}
+
+.contact-links a:hover, .contact-links a:first-child {
+    background-color: #eab308;
+    color: #121212;
+    border-color: #eab308;
+}
+
+/*galerry from 6 pliits*/
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.skills-container article {
+    width: 31.5%; 
+    height: 260px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.skills-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.skills-container article:hover img {
+    transform: scale(1.05);
+}
+
+/*featured trats section*/
+.testimonials-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.testimonials-container article {
+    width: 31.5%;
+    background-color: transparent;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-dox;
+}
+
+.testimonials-container img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin: 0 0 16px 0;
+}
+
+.testimonials-container h3 {
+    font-size: 20px;
+    margin: 0 0 6px 0;
+    padding: 0;
+}
+
+.testimonials-container span {
+    font-size: 15px;
+    font-weight: 700;
+    color: #eab308;
+}
+
+/*======footer========*/
+
+footer {
+    background-color: #12121212;
+    color: #ffffff;
+    padding: 80px 0 30px 0;
+    border-top: 1px solid #2a2a2a2a;
+    margin: 0;
+}
+
+footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+footer .experience-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    margin-bottom: 60px;
+    padding: 0;
+}
+
+footer .experience-container article > h3 {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+
+footer .experience-container div p {
+    color: #9ca3af;
+    font-size: 15px;
+    line-height: 1.8;
+    margin: 0 0 10px 0;
+}
+
+footer .experience-container div h3 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #ffffff;
+    margin: 0 0 4px 0;
+}
+
+footer p.logo {
+    text-align: center;
+    color: #6b7280;
+    font-size: 14px;
+    border-top: 1px solid #2a2a2a;
+    padding-top: 30px;
+    margin-top: 0;
+}

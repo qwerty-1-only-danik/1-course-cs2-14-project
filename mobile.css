@@ -1,0 +1,131 @@
+@media (max-width: 769px) {
+
+    /*==header===*/
+
+    header .container {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px 20px;
+    }
+
+    /*====hero section=========*/
+
+    #home .container {
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 32px;
+        padding-top: 20px;
+    }
+
+    .home-content {
+        width: 100%;
+    }
+
+    .home-content h1 {
+        font-size: 36px;
+    }
+
+    .home-links {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .home-links a:first-child {
+        margin-right: 0;
+    }
+
+    #home-img {
+        width: 100%;
+        max-width: 360px;
+        height: auto;
+        box-shadow: none;
+    }
+
+    /*========top products section=========*/
+
+    .products-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+    }
+
+    .products-container article {
+        width: 100%;
+        max-width: 360px;
+    }
+
+    /*======promo banner section=======*/
+
+    #promo .section-heading h2, #about .section-heading h2 {
+        font-size: 28px;
+    }
+
+    /*======explore more section (gallery grid)========*/
+
+    .contact-links {
+        flex-wrap: wrap;
+        gap: 10px;
+        padding: 0 10px;
+    }
+
+    .contact-links a {
+        padding: 6px 14px;
+        font-size: 13px;
+    }
+
+    .skills-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+
+    .skills-container article {
+        width: 100%;
+        height: 180px;
+    }
+
+    /*========featured treats section===========*/
+
+    .testimonials-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+    }
+
+    .testimonials-container article {
+        width: 100%;
+        max-width: 360px;
+    }
+
+    /*=======footer section========*/
+
+    footer .experience-container {
+        flex-direction: column;
+        gap: 32px;
+        text-align: center;
+    }
+
+    footer .experience-container article{
+        width: 100%;
+    }
+
+    footer .experience-container article > h3 {
+        margin-bottom: 12px;
+    }
+}
+
+/*=================
+extra small phone screen
+==================*/
+
+@media (max-width: 480px) {
+    .skills-container {
+        grid-template-columns: 1fr;
+    }
+}
